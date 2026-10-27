@@ -27,7 +27,7 @@ namespace yb {
 //   - Returns a snapshot ID in format: "<32-char-hex>-<32-char-hex>"
 class CdcUpgradeTest : public UpgradeTestBase {
  public:
-  CdcUpgradeTest() : UpgradeTestBase(kBuild_2024_2_4_0) {}
+  CdcUpgradeTest() : UpgradeTestBase(kBuild_2026_1_4_0) {}
 
   void TearDown() override {
     // Old version tservers hang on SIGTERM for 60s if masters are already down (the CDC
